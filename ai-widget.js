@@ -36,5 +36,32 @@ document.body.appendChild(widget);
 
 document.addEventListener(
 "DOMContentLoaded",
-createAIWidget
+()=>{
+
+createAIWidget();
+
+
+const button = document.getElementById("ai-button");
+
+const panel = document.getElementById("ai-panel");
+
+
+button.onclick = function(){
+
+if(panel.style.display === "block"){
+
+panel.style.display="none";
+
+}
+
+else{
+
+panel.style.display="block";
+
+}
+
+};
+
+
+}
 );
