@@ -52,15 +52,35 @@ let command = commandBox.value;
 
 if(command){
 
+if(window.AIApproval){
+
+let request =
+AIApproval.createRequest(command);
+
+
 responseBox.innerHTML =
+
 `
-AI received:
+Status: ${request.status}
 
-"${command}"
+<br><br>
 
-Analysis started...
+Request:
+
+${request.action}
+
+<br><br>
+
+Waiting Founder Decision
 `;
 
+}
+else{
+
+responseBox.innerHTML =
+"Approval System Offline";
+
+}
 }
 
 
