@@ -326,3 +326,13 @@ button{
     font-weight:bold;
 
 }
+
+.card:hover{
+
+transform:translateY(-10px);
+
+background:var(--surface2);
+
+box-shadow:0 20px 50px rgba(0,229,255,.15);
+
+}
