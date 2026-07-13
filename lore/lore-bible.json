@@ -1,1 +1,33 @@
+{
+  "project": "IranVerseOs",
 
+  "universe": {
+    "name": "IranVerse",
+    "version": "1.0 Alpha",
+
+    "core_principle": "Every legend is connected.",
+
+    "language": "Persian",
+
+    "timeline": "Unified",
+
+    "main_energy": "Farrah",
+
+    "main_world": "Arya"
+  },
+
+  "rules": [
+
+    "Every hero has a destiny.",
+
+    "Every NFT has a story.",
+
+    "Every power has a weakness.",
+
+    "Nothing exists without history.",
+
+    "Every kingdom has guardians.",
+
+    "AI knows every legend."
+  ]
+}
