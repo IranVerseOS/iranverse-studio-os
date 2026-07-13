@@ -1,16 +1,48 @@
 {
   "heroes": [
     {
+      "id": "IV-H-0001",
+      "nft_id": "NFT-0001",
+
       "name": "Arvand",
       "title": "The First Guardian of IranVerse",
+
       "origin": "Ancient Persian Realm",
+      "world": "Arya",
+      "kingdom": "Guardians",
+
+      "class": "Guardian",
+      "rarity": "Legendary",
+      "element": "Light",
+
+      "level": 1,
+
       "powers": [
         "Energy Control",
         "Ancient Wisdom",
         "Guardian Spirit"
       ],
-      "personality": "Brave, loyal and wise",
-      "story": "A legendary guardian chosen to protect the balance between ancient forces and future technology."
+
+      "weapon": "Guardian Blade",
+      "armor": "Light Armor",
+
+      "personality": "Brave, Loyal, Wise",
+
+      "weakness": [
+        "Dark Energy"
+      ],
+
+      "allies": [],
+      "enemies": [],
+
+      "story": "A legendary guardian chosen to protect the balance between ancient forces and future technology.",
+
+      "status": "Alive",
+
+      "animation_ready": true,
+      "game_ready": true,
+      "ai_ready": true,
+      "nft_ready": true
     }
   ]
 }
