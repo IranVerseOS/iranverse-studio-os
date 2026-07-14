@@ -310,7 +310,7 @@ document.createElement("div");
 
 
 card.className =
-"world-card";
+`world-card ${world.id}`;
 
 
 
