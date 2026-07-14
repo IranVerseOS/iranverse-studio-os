@@ -731,3 +731,60 @@ box-shadow:
     line-height: 1.7;
 
 }
+
+/* ===============================
+   Realm Visual Identity System
+================================ */
+
+
+.world-card {
+
+    position: relative;
+    overflow: hidden;
+
+}
+
+
+
+.world-card::before {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    opacity: 0.12;
+
+    background:
+    linear-gradient(
+    135deg,
+    rgba(255,215,0,0.5),
+    transparent
+    );
+
+    pointer-events: none;
+
+}
+
+
+
+.world-symbol {
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+
+
+.world-card h3,
+.world-card h4,
+.world-card p {
+
+    position: relative;
+
+    z-index: 2;
+
+}
