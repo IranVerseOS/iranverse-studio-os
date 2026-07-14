@@ -87,3 +87,23 @@ responseBox.innerHTML =
 };
 
 }
+
+// ===============================
+// IranVerseOs Lore Engine
+// ===============================
+
+async function loadLore() {
+    try {
+        const response = await fetch("story/lore.json");
+        const lore = await response.json();
+
+        console.log("Lore System Activated:", lore);
+
+        window.IranVerseLore = lore;
+
+    } catch (error) {
+        console.error("Lore loading failed:", error);
+    }
+}
+
+loadLore();
