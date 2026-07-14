@@ -10,7 +10,9 @@
         "symbol": "𓀀",
         "element": "Ancient Energy",
         "theme": "Mystic Golden Civilization",
-        "image": "ancient-persia.jpg"
+        "image": "ancient-persia.jpg",
+        "color": "gold",
+        "rank": "Primordial"
       },
 
       "description": "The birthplace of forgotten knowledge, ancient energy and legendary guardians.",
@@ -20,7 +22,13 @@
         "Mystic Energy"
       ],
 
-      "status": "Active"
+      "status": "Active",
+
+      "lore": {
+        "age": "Ancient Era",
+        "origin": "The first source of awakened power",
+        "guardian_class": "Legendary Guardians"
+      }
     },
 
 
@@ -34,7 +42,9 @@
         "symbol": "◈",
         "element": "Technology",
         "theme": "Cyber Persian Future",
-        "image": "future-nexus.jpg"
+        "image": "future-nexus.jpg",
+        "color": "cyan",
+        "rank": "Mythic"
       },
 
       "description": "A futuristic world where artificial intelligence and ancient wisdom merge.",
@@ -44,7 +54,13 @@
         "Artificial Intelligence"
       ],
 
-      "status": "Developing"
+      "status": "Developing",
+
+      "lore": {
+        "age": "Future Era",
+        "origin": "The evolution of intelligence and digital consciousness",
+        "guardian_class": "Cyber Guardians"
+      }
     }
   ]
 }
