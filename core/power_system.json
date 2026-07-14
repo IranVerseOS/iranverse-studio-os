@@ -1,19 +1,44 @@
 {
   "power_system": {
     "levels": [
-      "Awakened",
-      "Guardian",
-      "Legendary",
-      "Mythic"
+      "levels": [
+  "Awakened",
+  "Guardian",
+  "Elite",
+  "Legendary",
+  "Mythic",
+  "Divine",
+  "Primordial"
+],
     ],
     "categories": [
-      "Energy",
-      "Ancient Knowledge",
-      "Elemental Forces",
-      "Technology"
+  "Energy",
+  "Ancient Knowledge",
+  "Elemental Forces",
+  "Technology",
+  "Divine",
+  "Nature",
+  "Spirit",
+  "Cosmic"
+],
     ],
     "rules": [
-      "Every power has a source",
+      
+      "Every power has,
+"elements": [
+  "Light",
+  "Fire",
+  "Water",
+  "Earth",
+  "Wind",
+  "Shadow",
+  "Lightning",
+  "Ice",
+  "Nature",
+  "Time",
+  "Space"
+]
+  a source",
       "Power requires balance",
       "No ability exists without consequence"
     ]
