@@ -344,7 +344,28 @@ function displayWorlds() {
         ${world.status}
         </p>
 
+<p>
+<strong>Theme:</strong>
+${
+world.identity
+?
+world.identity.theme
+:
+"Unknown"
+}
+</p>
 
+
+<p>
+<strong>Rank:</strong>
+${
+world.identity
+?
+world.identity.rank
+:
+"Unknown"
+}
+</p>
 
 
         <p>
