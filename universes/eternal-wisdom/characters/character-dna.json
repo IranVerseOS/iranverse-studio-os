@@ -1,1 +1,55 @@
+{
+  "character_dna_system": {
 
+    "identity": {
+      "id": "",
+      "name": "",
+      "title": "",
+      "universe": "Eternal Wisdom"
+    },
+
+    "origin": {
+      "realm": "",
+      "era": "",
+      "birth_story": ""
+    },
+
+    "personality": {
+      "traits": [],
+      "values": [],
+      "fears": [],
+      "goals": []
+    },
+
+    "abilities": {
+      "powers": [],
+      "element": "",
+      "class": "",
+      "power_source": ""
+    },
+
+    "relationships": {
+      "allies": [],
+      "enemies": [],
+      "mentor": ""
+    },
+
+    "evolution": {
+      "current_level": "",
+      "future_forms": [],
+      "awakening_condition": ""
+    },
+
+    "nft_identity": {
+      "rarity": "",
+      "special_traits": [],
+      "collection": "Genesis Guardians"
+    },
+
+    "story": {
+      "chapter": "",
+      "legend": ""
+    }
+
+  }
+}
