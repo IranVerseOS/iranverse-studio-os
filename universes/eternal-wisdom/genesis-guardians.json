@@ -1,0 +1,49 @@
+{
+  "collection": "Genesis Guardians",
+  "season": 1,
+
+  "guardians": [
+    {
+      "id": "GG-001",
+      "name": "Arvand",
+      "role": "First Guardian",
+      "core": "Light"
+    },
+    {
+      "id": "GG-002",
+      "name": "Rostam",
+      "role": "Guardian of Strength",
+      "core": "Earth"
+    },
+    {
+      "id": "GG-003",
+      "name": "Arash",
+      "role": "Guardian of Destiny",
+      "core": "Wind"
+    },
+    {
+      "id": "GG-004",
+      "name": "Jamshid",
+      "role": "Guardian of Civilization",
+      "core": "Sun"
+    },
+    {
+      "id": "GG-005",
+      "name": "Cyrus",
+      "role": "Guardian of Justice",
+      "core": "Light"
+    },
+    {
+      "id": "GG-006",
+      "name": "Avicenna",
+      "role": "Guardian of Wisdom",
+      "core": "Knowledge"
+    },
+    {
+      "id": "GG-007",
+      "name": "Anahita",
+      "role": "Guardian of Life",
+      "core": "Water"
+    }
+  ]
+}
