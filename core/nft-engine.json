@@ -1,0 +1,98 @@
+{
+  "nft_engine": {
+
+    "version": "1.0",
+
+    "system_name": "IranVerse NFT Engine",
+
+    "purpose": "Manage, generate and connect all IranVerse NFT assets",
+
+    "data_connections": {
+
+      "characters": "core/character-engine.json",
+
+      "dna": "universes/eternal-wisdom/characters/character-dna.json",
+
+      "traits": "universes/eternal-wisdom/traits/trait-system.json",
+
+      "stories": "story",
+
+      "powers": "core"
+
+    },
+
+
+    "nft_structure": {
+
+      "identity": [
+        "NFT_ID",
+        "Character_ID",
+        "Universe_ID"
+      ],
+
+      "metadata": [
+        "Name",
+        "Title",
+        "Origin",
+        "Story"
+      ],
+
+      "attributes": [
+        "Rarity",
+        "Class",
+        "Element",
+        "Power_Level",
+        "Special_Trait"
+      ]
+
+    },
+
+
+    "rarity_system": {
+
+      "levels": [
+        "Common",
+        "Rare",
+        "Epic",
+        "Legendary",
+        "Mythic",
+        "Divine",
+        "Primordial"
+      ]
+
+    },
+
+
+    "generation_rules": [
+
+      "Every NFT must belong to a character",
+
+      "Every NFT must have a story",
+
+      "Every NFT must have unique traits",
+
+      "Every power must have a source",
+
+      "Every NFT must belong to a universe"
+
+    ],
+
+
+    "future_modules": [
+
+      "3D NFT",
+
+      "AI Character Interaction",
+
+      "Game Integration",
+
+      "Marketplace",
+
+      "Animation Assets",
+
+      "Mobile App"
+
+    ]
+
+  }
+}
