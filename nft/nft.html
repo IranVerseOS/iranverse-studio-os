@@ -154,6 +154,30 @@ controller.display(nftContainer);
 
 </script>
   <div id="nft-gallery"></div>
+  <script src="nft/nft-card-renderer.js"></script>
+<script src="nft/nft-data-connector.js"></script>
+<script src="nft/nft-display-controller.js"></script>
+
+<script>
+
+const nftContainer = document.getElementById("nft-gallery");
+
+const connector = new NFTDataConnector(
+"universes/eternal-wisdom/genesis-guardians.json"
+);
+
+const renderer = new NFTCardRenderer(nftContainer);
+
+const controller = new NFTDisplayController();
+
+controller.initialize(
+connector,
+renderer
+);
+
+controller.display(nftContainer);
+
+</script>
 </body>
 
 </html>
