@@ -1,1 +1,67 @@
+{
+  "trait_system": {
 
+    "rarity_levels": [
+      {
+        "name": "Common",
+        "value": 1
+      },
+      {
+        "name": "Rare",
+        "value": 2
+      },
+      {
+        "name": "Epic",
+        "value": 3
+      },
+      {
+        "name": "Legendary",
+        "value": 4
+      },
+      {
+        "name": "Mythic",
+        "value": 5
+      },
+      {
+        "name": "Divine",
+        "value": 6
+      }
+    ],
+
+    "classes": [
+      "Guardian",
+      "Warrior",
+      "King",
+      "Scholar",
+      "Mage",
+      "Archer",
+      "Healer"
+    ],
+
+    "elements": [
+      "Light",
+      "Fire",
+      "Water",
+      "Earth",
+      "Wind",
+      "Shadow",
+      "Time",
+      "Space"
+    ],
+
+    "origins": [
+      "Ancient Persia",
+      "Future Nexus",
+      "Mystic Realm"
+    ],
+
+    "special_traits": [
+      "Ancient Bloodline",
+      "Farrah Connection",
+      "Lost Knowledge",
+      "Divine Blessing",
+      "Cosmic Awareness"
+    ]
+
+  }
+}
