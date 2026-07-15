@@ -1,0 +1,69 @@
+{
+  "collection_engine": {
+
+    "version": "1.0",
+
+    "system_name": "IranVerse NFT Collection Engine",
+
+    "purpose": "Manage all NFT collections inside IranVerse",
+
+    "collections": [
+
+      {
+        "id": "COL-001",
+
+        "name": "Genesis Guardians",
+
+        "universe": "Eternal Wisdom",
+
+        "type": "Hero Collection",
+
+        "status": "Active",
+
+        "members_source": "universes/eternal-wisdom/genesis-guardians.json"
+
+      }
+
+    ],
+
+
+    "collection_rules": [
+
+      "Every NFT must belong to a collection",
+
+      "Every collection must belong to a universe",
+
+      "Every collection must have a story",
+
+      "Every collection must have unique identity"
+
+    ],
+
+
+    "future_collections": [
+
+      "Void Council",
+
+      "Future Nexus",
+
+      "Ancient Legends",
+
+      "Cosmic Guardians"
+
+    ],
+
+
+    "connections": {
+
+      "nft_engine": "core/nft-engine.json",
+
+      "metadata": "assets/nft/metadata-schema.json",
+
+      "characters": "core/character-engine.json",
+
+      "lore": "story"
+
+    }
+
+  }
+}
