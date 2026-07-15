@@ -1,0 +1,28 @@
+{
+  "id": "UV-001",
+  "name": "Eternal Wisdom",
+  "version": "1.0.0",
+  "status": "Development",
+
+  "description": "The first official universe of IranVerseOS where ancient Persian legends, heroes and wisdom awaken again.",
+
+  "energy": "Farrah",
+
+  "main_story": "The Seven Cores of Farrah",
+
+  "hero_collection": "Genesis Guardians",
+
+  "villain_collection": "Void Council",
+
+  "worlds": [
+    "Ancient Persia",
+    "Future Nexus"
+  ],
+
+  "engines": [
+    "Story",
+    "NFT",
+    "Character",
+    "AI"
+  ]
+}
