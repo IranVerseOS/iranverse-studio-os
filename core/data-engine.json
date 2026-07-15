@@ -1,0 +1,29 @@
+{
+  "system": "IranVerse Data Engine",
+  "version": "1.0",
+
+  "connections": {
+    "universes": true,
+    "characters": true,
+    "powers": true,
+    "stories": true,
+    "nft": true,
+    "ai": true
+  },
+
+  "main_source": "universes",
+
+  "rules": [
+    "Every character must belong to a universe",
+    "Every power must have a source",
+    "Every NFT must have a story",
+    "Every story must connect to lore"
+  ],
+
+  "future_modules": [
+    "Game Engine",
+    "Animation Engine",
+    "Marketplace",
+    "Mobile App"
+  ]
+}
