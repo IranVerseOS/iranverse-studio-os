@@ -1,0 +1,51 @@
+{
+  "ai_command_center": {
+
+    "version": "1.0",
+
+    "name": "IranVerse AI Command Center",
+
+    "mode": "Founder Control",
+
+    "commands": [
+
+      {
+        "id": "CMD-001",
+        "name": "Analyze Universe",
+        "permission": "Founder"
+      },
+
+      {
+        "id": "CMD-002",
+        "name": "Generate Lore Report",
+        "permission": "Founder"
+      },
+
+      {
+        "id": "CMD-003",
+        "name": "Check System Status",
+        "permission": "Founder"
+      }
+
+    ],
+
+    "reports": {
+
+      "enabled": true,
+
+      "history": true,
+
+      "approval_required": true
+
+    },
+
+    "security": {
+
+      "ai_auto_execute": false,
+
+      "founder_confirmation": true
+
+    }
+
+  }
+}
