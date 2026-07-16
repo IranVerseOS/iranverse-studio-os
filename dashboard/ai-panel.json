@@ -1,0 +1,33 @@
+{
+  "ai_panel": {
+
+    "name": "AI Nexus Control Panel",
+
+    "connected_system": "ai/command-center.json",
+
+    "status": "Online",
+
+    "features": [
+
+      "System Reports",
+
+      "Lore Analysis",
+
+      "Universe Monitoring",
+
+      "Founder Approval"
+
+    ],
+
+    "permissions": {
+
+      "view": true,
+
+      "execute": false,
+
+      "approval_required": true
+
+    }
+
+  }
+}
