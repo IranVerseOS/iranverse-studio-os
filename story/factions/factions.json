@@ -1,0 +1,27 @@
+{
+  "factions": [
+    {
+      "id": "FAC-001",
+      "name": "Guardians of Farrah",
+      "alignment": "Light",
+      "leader": "Arvand",
+      "mission": "Protect the balance of IranVerse.",
+      "headquarters": "Citadel of Eternal Wisdom",
+      "members": [
+        "Arvand",
+        "Rostam",
+        "Arash",
+        "Simurgh"
+      ]
+    },
+    {
+      "id": "FAC-002",
+      "name": "Shadow Dominion",
+      "alignment": "Dark",
+      "leader": "Unknown",
+      "mission": "Corrupt the Farrah and rewrite history.",
+      "headquarters": "The Void Throne",
+      "members": []
+    }
+  ]
+}
