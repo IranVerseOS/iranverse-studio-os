@@ -1,110 +1,51 @@
 {
-  "collection": "Genesis Guardians",
-  "season": 1,
-
   "guardians": [
     {
       "id": "GG-001",
       "name": "Arvand",
-      "role": "First Guardian",
+      "role": "The First Guardian",
       "core": "Light",
-
       "traits": {
         "rarity": "Legendary",
         "class": "Guardian",
         "element": "Light",
-        "origin": "Ancient Persia",
-        "special": "Farrah Connection"
+        "special": "Farrah Core"
       }
     },
-
     {
       "id": "GG-002",
       "name": "Rostam",
-      "role": "Guardian of Strength",
+      "role": "The Mountain King",
       "core": "Earth",
-
       "traits": {
         "rarity": "Mythic",
         "class": "Warrior",
         "element": "Earth",
-        "origin": "Ancient Persia",
-        "special": "Titan Bloodline"
+        "special": "Titan Strength"
       }
     },
-
     {
       "id": "GG-003",
       "name": "Arash",
-      "role": "Guardian of Destiny",
+      "role": "The Eternal Archer",
       "core": "Wind",
-
       "traits": {
         "rarity": "Legendary",
-        "class": "Archer",
+        "class": "Ranger",
         "element": "Wind",
-        "origin": "Ancient Persia",
-        "special": "Divine Arrow"
+        "special": "Infinity Arrow"
       }
     },
-
     {
       "id": "GG-004",
-      "name": "Jamshid",
-      "role": "Guardian of Civilization",
-      "core": "Sun",
-
+      "name": "Simurgh",
+      "role": "Ancient Divine Beast",
+      "core": "Cosmic",
       "traits": {
-        "rarity": "Divine",
-        "class": "King",
-        "element": "Light",
-        "origin": "Ancient Persia",
-        "special": "Lost Knowledge"
-      }
-    },
-
-    {
-      "id": "GG-005",
-      "name": "Cyrus",
-      "role": "Guardian of Justice",
-      "core": "Light",
-
-      "traits": {
-        "rarity": "Divine",
-        "class": "King",
-        "element": "Light",
-        "origin": "Ancient Persia",
-        "special": "Justice Aura"
-      }
-    },
-
-    {
-      "id": "GG-006",
-      "name": "Avicenna",
-      "role": "Guardian of Wisdom",
-      "core": "Knowledge",
-
-      "traits": {
-        "rarity": "Mythic",
-        "class": "Scholar",
-        "element": "Time",
-        "origin": "Ancient Persia",
-        "special": "Ancient Knowledge"
-      }
-    },
-
-    {
-      "id": "GG-007",
-      "name": "Anahita",
-      "role": "Guardian of Life",
-      "core": "Water",
-
-      "traits": {
-        "rarity": "Legendary",
-        "class": "Healer",
-        "element": "Water",
-        "origin": "Mystic Realm",
-        "special": "Divine Blessing"
+        "rarity": "Primordial",
+        "class": "Divine Beast",
+        "element": "Cosmic",
+        "special": "Rebirth Flame"
       }
     }
   ]
