@@ -1,0 +1,46 @@
+{
+  "reports_panel": {
+
+    "name": "AI Reports Center",
+
+    "connected_system": "ai/ai-reports.json",
+
+    "status": "Connected",
+
+    "available_reports": [
+
+      {
+        "type": "System Status",
+        "source": "AI Reports Engine"
+      },
+
+      {
+        "type": "Lore Analysis",
+        "source": "AI Reports Engine"
+      },
+
+      {
+        "type": "NFT Analysis",
+        "source": "AI Reports Engine"
+      }
+
+    ],
+
+    "display": {
+
+      "dashboard_widget": true,
+
+      "history_enabled": true
+
+    },
+
+    "security": {
+
+      "view_only": true,
+
+      "approval_required": true
+
+    }
+
+  }
+}
