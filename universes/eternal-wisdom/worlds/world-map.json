@@ -1,0 +1,35 @@
+{
+  "world_map": {
+
+    "universe": "Eternal Wisdom",
+
+    "locations": [
+
+      {
+        "id": "LOC-001",
+        "name": "Citadel of Eternal Wisdom",
+        "type": "Guardian City",
+        "era": "Ancient Future",
+        "description": "The hidden city where Guardians protect the balance of IranVerse."
+      },
+
+      {
+        "id": "LOC-002",
+        "name": "Void Throne",
+        "type": "Dark Fortress",
+        "era": "Unknown",
+        "description": "The corrupted realm controlled by Shadow Dominion."
+      },
+
+      {
+        "id": "LOC-003",
+        "name": "Future Nexus",
+        "type": "Cyber Persian City",
+        "era": "Future",
+        "description": "A civilization where ancient wisdom meets advanced technology."
+      }
+
+    ]
+
+  }
+}
