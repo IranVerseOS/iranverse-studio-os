@@ -1,0 +1,55 @@
+{
+  "founder_dashboard": {
+
+    "name": "IranVerse Founder Dashboard",
+
+    "version": "1.0",
+
+    "access": "Founder Only",
+
+    "systems": [
+
+      {
+        "name": "AI Nexus",
+        "status": "Prototype",
+        "file": "core/ai-nexus-core.json"
+      },
+
+      {
+        "name": "Lore Engine",
+        "status": "Active",
+        "file": "story/lore-engine.json"
+      },
+
+      {
+        "name": "NFT Engine",
+        "status": "Active",
+        "file": "nft/"
+      },
+
+      {
+        "name": "World Engine",
+        "status": "Active",
+        "file": "universes/eternal-wisdom/worlds/world-map.json"
+      },
+
+      {
+        "name": "Character System",
+        "status": "Active",
+        "file": "heroes.json"
+      }
+
+    ],
+
+    "security": {
+
+      "approval_required": true,
+
+      "ai_auto_edit": false,
+
+      "founder_control": true
+
+    }
+
+  }
+}
