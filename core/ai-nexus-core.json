@@ -1,0 +1,63 @@
+{
+  "ai_nexus": {
+
+    "version": "1.0",
+
+    "name": "IranVerse AI Nexus",
+
+    "status": "Prototype",
+
+    "purpose": "Central intelligence system for IranVerseOS",
+
+    "connected_systems": [
+
+      "Lore Engine",
+
+      "Character Engine",
+
+      "NFT Engine",
+
+      "World Engine",
+
+      "Story Engine"
+
+    ],
+
+    "functions": [
+
+      "Analyze universe data",
+
+      "Maintain story consistency",
+
+      "Generate connections",
+
+      "Assist creator",
+
+      "Report system changes"
+
+    ],
+
+    "permissions": {
+
+      "auto_change": false,
+
+      "creator_approval_required": true,
+
+      "mode": "Assistant"
+
+    },
+
+    "rules": [
+
+      "AI never overrides creator decisions",
+
+      "AI protects canon",
+
+      "AI suggests before changing",
+
+      "Every action must be traceable"
+
+    ]
+
+  }
+}
