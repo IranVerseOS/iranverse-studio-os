@@ -1,0 +1,154 @@
+{
+  "collection": "PersiaNexus Eternal Legends",
+
+  "legends": [
+
+    {
+      "id": "PNX-L001",
+
+      "name": "Rostam",
+
+      "title": "The Immortal Warrior of Light",
+
+      "category": "Mythic Hero",
+
+      "era": "Ancient Persia",
+
+      "rarity": "Mythic NFT",
+
+
+      "story":
+      "Rostam, the greatest warrior of ancient Persia, awakens in PersiaNexus as a guardian chosen by the Eternal Flame. His courage becomes a force that protects the worlds against the Shadow Legion.",
+
+
+      "powers": [
+
+        "Zulfiqar of Eternal Fire",
+
+        "Spirit Armor",
+
+        "Dragon Slayer Force",
+
+        "Warrior's Immortal Will"
+
+      ],
+
+
+      "element":
+      "Fire + Spirit",
+
+
+      "artifact":
+      "Zulfiqar Flame Blade",
+
+
+      "enemy":
+      "Shadow Legion",
+
+
+      "power_level":
+      9900
+
+    },
+
+
+    {
+      "id": "PNX-L002",
+
+      "name": "Avicenna",
+
+      "title": "The Master of Eternal Wisdom",
+
+      "category": "Knowledge Legend",
+
+      "era": "Golden Age of Persia",
+
+      "rarity": "Legendary NFT",
+
+
+      "story":
+      "Avicenna enters PersiaNexus as the guardian of forgotten knowledge. His mind connects ancient wisdom with future intelligence, creating the bridge between humanity and cosmic understanding.",
+
+
+      "powers": [
+
+        "Healing Light",
+
+        "Quantum Knowledge",
+
+        "Mind Awakening",
+
+        "Life Energy Control"
+
+      ],
+
+
+      "element":
+      "Wisdom + Light",
+
+
+      "artifact":
+      "The Eternal Book of Knowledge",
+
+
+      "enemy":
+      "The Void of Ignorance",
+
+
+      "power_level":
+      9200
+
+    },
+
+
+    {
+      "id": "PNX-L003",
+
+      "name": "Arvand",
+
+      "title": "The First Guardian of PersiaNexus",
+
+      "category": "Guardian",
+
+      "era": "Genesis Era",
+
+      "rarity": "Legendary NFT",
+
+
+      "story":
+      "Arvand was the first guardian created to unite ancient Persian energy with future technology. He protects the balance between worlds.",
+
+
+      "powers": [
+
+        "Light Energy Control",
+
+        "Guardian Shield",
+
+        "Ancient Technology Fusion",
+
+        "Cosmic Protection"
+
+      ],
+
+
+      "element":
+      "Light",
+
+
+      "artifact":
+      "Crystal of Eternal Balance",
+
+
+      "enemy":
+      "Dark Nexus",
+
+
+      "power_level":
+      9800
+
+    }
+
+  ]
+
+}
