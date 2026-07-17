@@ -1,0 +1,18 @@
+{
+  "quests": [
+    {
+      "id": "QUEST-0001",
+      "title": "The First Guardian",
+      "universe": "eternal-wisdom",
+      "era": "Age of Guardians",
+      "difficulty": "Easy",
+      "hero": "Arvand",
+      "status": "Active",
+      "reward": {
+        "xp": 100,
+        "artifact": "Light Crystal"
+      },
+      "objective": "Protect the ancient gate from the Shadow Legion."
+    }
+  ]
+}
