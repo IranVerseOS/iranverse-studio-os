@@ -1,0 +1,38 @@
+{
+  "timeline": {
+    "version": "1.0",
+    "name": "IranVerse Timeline",
+
+    "eras": [
+
+      {
+        "id": "ERA-001",
+        "name": "Age of Creation",
+        "order": 1,
+        "status": "Active"
+      },
+
+      {
+        "id": "ERA-002",
+        "name": "Age of Ancient Kings",
+        "order": 2,
+        "status": "Planned"
+      },
+
+      {
+        "id": "ERA-003",
+        "name": "Age of Guardians",
+        "order": 3,
+        "status": "Planned"
+      },
+
+      {
+        "id": "ERA-004",
+        "name": "Age of AI Nexus",
+        "order": 4,
+        "status": "Future"
+      }
+
+    ]
+  }
+}
