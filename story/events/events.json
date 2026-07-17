@@ -1,0 +1,19 @@
+{
+  "events": [
+    {
+      "id": "EVENT-0001",
+      "title": "The Awakening of Arvand",
+      "type": "Story",
+      "timeline": "Age of Guardians",
+      "location": "Citadel of Eternal Wisdom",
+      "participants": [
+        "Arvand"
+      ],
+      "status": "Completed",
+      "effects": [
+        "Guardian Order Activated",
+        "Quest QUEST-0001 Unlocked"
+      ]
+    }
+  ]
+}
