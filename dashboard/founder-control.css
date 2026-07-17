@@ -1,0 +1,267 @@
+*{
+    box-sizing:border-box;
+}
+
+
+body{
+
+    margin:0;
+
+    font-family:
+    Arial, sans-serif;
+
+    background:
+    linear-gradient(
+    135deg,
+    #080b16,
+    #111827
+    );
+
+    color:white;
+
+    min-height:100vh;
+
+}
+
+
+
+header{
+
+    padding:50px;
+
+    text-align:center;
+
+}
+
+
+
+header h1{
+
+    font-size:42px;
+
+    margin-bottom:15px;
+
+}
+
+
+
+header p{
+
+    opacity:.7;
+
+    font-size:18px;
+
+}
+
+
+
+main{
+
+    width:90%;
+
+    max-width:1400px;
+
+    margin:auto;
+
+}
+
+
+
+section{
+
+    background:
+    rgba(255,255,255,.06);
+
+    border-radius:25px;
+
+    padding:35px;
+
+    margin-bottom:35px;
+
+    border:
+    1px solid rgba(255,255,255,.1);
+
+}
+
+
+
+h2{
+
+    margin-top:0;
+
+    font-size:30px;
+
+}
+
+
+
+
+.progress-box{
+
+    margin-top:25px;
+
+}
+
+
+
+.bar{
+
+    height:35px;
+
+    background:#222;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+}
+
+
+
+.fill{
+
+    height:100%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:
+    linear-gradient(
+    90deg,
+    #d4af37,
+    #fff1a8
+    );
+
+    color:black;
+
+    font-weight:bold;
+
+}
+
+
+
+
+
+.grid{
+
+    display:grid;
+
+    grid-template-columns:
+
+    repeat(auto-fit,minmax(320px,1fr));
+
+    gap:30px;
+
+}
+
+
+
+
+.card{
+
+    background:
+
+    rgba(255,255,255,.08);
+
+    padding:30px;
+
+    border-radius:22px;
+
+    min-height:180px;
+
+    transition:.3s;
+
+}
+
+
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+
+
+
+.small-bar{
+
+    margin-top:25px;
+
+    height:18px;
+
+    background:#222;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+}
+
+
+
+.small-bar span{
+
+    display:block;
+
+    height:100%;
+
+    background:
+    linear-gradient(
+    90deg,
+    #00e5ff,
+    #00ff88
+    );
+
+    text-align:center;
+
+    font-size:12px;
+
+}
+
+
+
+
+.bug-card{
+
+    padding:25px;
+
+    border-radius:20px;
+
+    background:
+    rgba(0,255,100,.1);
+
+}
+
+
+
+ul{
+
+    line-height:2.2;
+
+    font-size:18px;
+
+}
+
+
+
+
+@media(max-width:700px){
+
+    header h1{
+
+        font-size:30px;
+
+    }
+
+
+    section{
+
+        padding:20px;
+
+    }
+
+}
