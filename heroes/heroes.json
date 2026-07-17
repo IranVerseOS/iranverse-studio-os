@@ -1,5 +1,5 @@
+console.log("Hero Engine Loaded");
 {
-  console.log("Hero Engine Loaded");
   "id": "IV-H-0001",
 
   "nft_id": "NFT-0001",
