@@ -1,13 +1,12 @@
 // =======================================
-// PersiaNexus NFT Engine v1.0
+// PersiaNexus NFT Engine v2.0
+// Genesis Collection System
 // =======================================
 
 
-console.log("💎 PersiaNexus NFT Engine Activated");
+console.log("💎 PersiaNexus NFT Engine v2 Activated");
 
 
-
-// Load NFT Database
 
 async function loadNFTs(){
 
@@ -21,30 +20,28 @@ const response = await fetch("nft/nft.json");
 const data = await response.json();
 
 
-
-window.PersiaNexusNFTs = data;
+window.PersiaNexusNFTCollection = data;
 
 
 
 console.log(
 "NFT Collection Loaded:",
-data
+data.collection
 );
 
 
 
-displayNFTs();
+renderNFTCollection();
 
 
 
 }
 
-
 catch(error){
 
 
 console.error(
-"NFT Loading Failed:",
+"NFT Engine Error:",
 error
 );
 
@@ -59,9 +56,7 @@ error
 
 
 
-// Display NFT Cards
-
-function displayNFTs(){
+function renderNFTCollection(){
 
 
 
@@ -70,14 +65,7 @@ document.querySelector(".nft-grid");
 
 
 
-if(
-!container ||
-!window.PersiaNexusNFTs
-){
-
-return;
-
-}
+if(!container) return;
 
 
 
@@ -85,12 +73,12 @@ container.innerHTML = "";
 
 
 
-const nfts =
-window.PersiaNexusNFTs.nfts;
+const collection =
+window.PersiaNexusNFTCollection.nfts;
 
 
 
-nfts.forEach(nft => {
+collection.forEach(nft => {
 
 
 
@@ -100,26 +88,60 @@ document.createElement("div");
 
 
 card.className =
-"nft-card";
+"nft-card premium";
 
 
 
 card.innerHTML = `
 
 
+
+<div class="nft-image">
+
+<img 
+src="${nft.image}"
+alt="${nft.name}"
+onerror="this.style.display='none'"
+>
+
+</div>
+
+
+
+<div class="nft-content">
+
+
+<h2>
+
+⚔ ${nft.name}
+
+</h2>
+
+
+
 <h3>
 
-💎 ${nft.name}
+${nft.title}
 
 </h3>
 
 
 
-<h4>
+<div class="nft-badge">
 
-${nft.title}
+${nft.rarity}
 
-</h4>
+</div>
+
+
+
+<p>
+
+<strong>Collection:</strong>
+
+PersiaNexus Genesis
+
+</p>
 
 
 
@@ -128,16 +150,6 @@ ${nft.title}
 <strong>ID:</strong>
 
 ${nft.id}
-
-</p>
-
-
-
-<p>
-
-<strong>Rarity:</strong>
-
-${nft.rarity}
 
 </p>
 
@@ -163,28 +175,83 @@ ${nft.element}
 
 
 
+<p>
+
+<strong>Class:</strong>
+
+${nft.class}
+
+</p>
+
+
+
+<p>
+
+<strong>Power Score:</strong>
+
+${nft.power_score}
+
+</p>
+
+
+
+<p>
+
+<strong>Level:</strong>
+
+${nft.level}
+
+</p>
+
+
+
+
 
 <h4>
-
-Abilities
-
+Attributes
 </h4>
 
 
 
 <ul>
 
-${nft.powers.map(power =>
+<li>
+Strength:
+${nft.attributes.strength}
+</li>
 
-`<li>${power}</li>`
 
-).join("")}
+<li>
+Intelligence:
+${nft.attributes.intelligence}
+</li>
+
+
+<li>
+Energy:
+${nft.attributes.energy}
+</li>
+
+
+<li>
+Spirit:
+${nft.attributes.spirit}
+</li>
+
+
+<li>
+Defense:
+${nft.attributes.defense}
+</li>
+
 
 </ul>
 
 
 
-<p>
+
+
+<p class="nft-story">
 
 ${nft.story}
 
@@ -192,18 +259,30 @@ ${nft.story}
 
 
 
+
 <div class="nft-status">
 
 
-${nft.game_ready ? "🎮 Game Ready" : ""}
+${nft.nft_status.mint}
 
 <br>
 
-${nft.animation_ready ? "🎬 Animation Ready" : ""}
+
+${nft.nft_status.game_ready ? "🎮 Game Ready" : ""}
 
 <br>
 
-${nft.ai_profile_ready ? "🤖 AI Ready" : ""}
+
+${nft.nft_status.animation_ready ? "🎬 Animation Ready" : ""}
+
+<br>
+
+
+${nft.nft_status.ai_profile_ready ? "🤖 AI Ready" : ""}
+
+
+</div>
+
 
 
 </div>
@@ -228,6 +307,5 @@ container.appendChild(card);
 
 
 
-// Start NFT System
 
 loadNFTs();
