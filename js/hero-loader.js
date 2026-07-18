@@ -1,137 +1,73 @@
-/*
-====================================
- PersiaNexus NFT Loader Engine
- Version 1.0
-====================================
-*/
+async function loadHeroes(){
+
+    const response = await fetch("../data/heroes.json");
+
+    const data = await response.json();
 
 
-const nftDatabase = 
-"nft/characters/eternal-legends-characters.json";
+    const container =
+    document.getElementById("heroes-container");
 
 
-
-async function loadNFTs(){
-
-
-try{
+    data.heroes.forEach(hero => {
 
 
-const response = await fetch(nftDatabase);
+        container.innerHTML += `
+
+        <div class="pn-card">
 
 
-const data = await response.json();
+            <img src="../${hero.nft.image}">
 
 
-
-const container =
-document.getElementById("nft-container");
+            <div class="card-body">
 
 
-
-if(!container) return;
-
-
-
-data.characters.forEach(nft => {
+                <h2>
+                ⚔️ ${hero.name}
+                </h2>
 
 
-
-const card = document.createElement("div");
-
-
-card.className = "nft-card";
+                <h3>
+                ${hero.title}
+                </h3>
 
 
-
-card.innerHTML = `
-
-
-
-<img src="${nft.image}" 
-alt="${nft.name}">
+                <p>
+                World:
+                ${hero.world}
+                </p>
 
 
-
-<h2>
-${nft.persianName}
-</h2>
-
-
-<h3>
-${nft.title}
-</h3>
+                <p>
+                Level:
+                ${hero.level}
+                </p>
 
 
-
-<p>
-💎 ${nft.rarity}
-</p>
-
-
-
-<p>
-⚡ Power:
-${nft.powerLevel}
-</p>
+                <p>
+                Powers:
+                ${hero.powers.join(" - ")}
+                </p>
 
 
-
-<p>
-${nft.type}
-</p>
-
+                <p>
+                ${hero.story.origin}
+                </p>
 
 
-<button onclick="
-openNFT('${nft.id}')
-">
-
-View NFT
-
-</button>
+            </div>
 
 
-`;
+        </div>
+
+        `;
 
 
-
-container.appendChild(card);
-
-
-
-});
-
+    });
 
 
 }
 
-catch(error){
 
-console.log(
-"NFT Loading Error:",
-error
-);
-
-}
-
-
-
-}
-
-
-
-
-function openNFT(id){
-
-
-window.location.href =
-"nft/pages/"+id+".html";
-
-
-}
-
-
-
-window.onload =
-loadNFTs;
+loadHeroes();
