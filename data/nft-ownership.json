@@ -1,0 +1,32 @@
+{
+  "ownership": [
+    {
+      "tokenId": "PNX-H-0001",
+      "character": "Rostam",
+      "currentOwner": "PersiaNexus Treasury",
+      "walletAddress": null,
+      "transferable": true,
+      "ownershipHistory": [
+        {
+          "owner": "PersiaNexus Treasury",
+          "date": "2026-07-18",
+          "event": "Minted"
+        }
+      ]
+    },
+    {
+      "tokenId": "PNX-H-0002",
+      "character": "Arash Kamangir",
+      "currentOwner": "PersiaNexus Treasury",
+      "walletAddress": null,
+      "transferable": true,
+      "ownershipHistory": [
+        {
+          "owner": "PersiaNexus Treasury",
+          "date": "2026-07-18",
+          "event": "Minted"
+        }
+      ]
+    }
+  ]
+}
