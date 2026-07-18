@@ -1,0 +1,42 @@
+{
+"id":"legend-009",
+"name":"Cyrus The Great",
+"persianName":"کوروش بزرگ",
+"title":"The Founder of Harmony",
+"rarity":"Divine",
+"powerLevel":100,
+
+"origin":{
+"era":"Achaemenid Persia",
+"rebirth":"Cyrus returns to unite civilizations against the forces of darkness."
+},
+
+"story":{
+"intro":"The legendary king awakens when humanity needs a leader who understands freedom and unity.",
+"mission":"Unite worlds and protect civilizations.",
+"enemy":"The Empire of Chaos."
+},
+
+"powers":[
+{
+"name":"King Energy",
+"description":"Creates powerful leadership energy."
+},
+{
+"name":"Unity Force",
+"description":"Unites different civilizations."
+},
+{
+"name":"Royal Shield",
+"description":"Creates an energy protection field."
+}
+],
+
+"assets":{
+"image":"assets/nft/cyrus.jpg",
+"trailer":"assets/trailers/cyrus.mp4",
+"music":"assets/audio/cyrus-theme.mp3"
+},
+
+"status":"Active"
+}
