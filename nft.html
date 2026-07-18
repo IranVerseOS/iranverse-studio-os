@@ -4,67 +4,92 @@
 <head>
 
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>PersiaNexus NFT Hub</title>
 
+
 <style>
 
+*{
+box-sizing:border-box;
+}
+
 body{
-    margin:0;
-    background:#080808;
-    color:white;
-    font-family:tahoma;
+
+margin:0;
+background:#050505;
+color:white;
+font-family:tahoma,Arial;
+
 }
 
 
 .hero{
-    height:70vh;
-    background:
-    linear-gradient(
-    rgba(0,0,0,.5),
-    rgba(0,0,0,.9)),
-    url("assets/images/nft/persian-legends-cover.jpg");
 
-    background-size:cover;
-    background-position:center;
+min-height:70vh;
 
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    text-align:center;
+background:
+linear-gradient(
+rgba(0,0,0,.45),
+rgba(0,0,0,.95)
+),
+url("assets/images/nft/persian-legends-cover.jpg");
+
+background-size:cover;
+background-position:center;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+text-align:center;
+
 }
 
 
 .hero h1{
-    font-size:50px;
+
+font-size:55px;
+color:#ffd700;
+
 }
+
+
+.hero p{
+
+font-size:22px;
+
+}
+
 
 
 .container{
 
-padding:40px;
+padding:50px;
 
 }
+
 
 
 .cards{
 
 display:grid;
-grid-template-columns:
-repeat(auto-fit,minmax(250px,1fr));
 
-gap:25px;
+grid-template-columns:
+repeat(auto-fit,minmax(260px,1fr));
+
+gap:30px;
 
 }
 
 
+
 .card{
 
-background:#151515;
+background:#111;
 
-border-radius:20px;
+border-radius:25px;
 
 overflow:hidden;
 
@@ -72,35 +97,79 @@ cursor:pointer;
 
 transition:.3s;
 
+border:1px solid #222;
+
 }
 
 
 .card:hover{
 
-transform:translateY(-10px);
+transform:translateY(-12px);
+
+border-color:#ffd700;
 
 }
+
 
 
 .card img{
 
 width:100%;
-height:300px;
+
+height:320px;
+
 object-fit:cover;
 
 }
 
 
+
 .info{
 
-padding:20px;
+padding:25px;
 
 }
 
 
-.badge{
+
+.name{
+
+font-size:28px;
+
+}
+
+
+
+.gold{
 
 color:#ffd700;
+
+}
+
+
+
+.rarity{
+
+background:#222;
+
+display:inline-block;
+
+padding:8px 15px;
+
+border-radius:20px;
+
+margin-top:10px;
+
+}
+
+
+.loading{
+
+text-align:center;
+
+font-size:25px;
+
+padding:50px;
 
 }
 
@@ -113,6 +182,7 @@ color:#ffd700;
 <body>
 
 
+
 <section class="hero">
 
 <div>
@@ -122,8 +192,9 @@ PersiaNexus Legends
 </h1>
 
 <p>
-دنیای NFT قهرمانان افسانه‌ای ایران
+دروازه ورود به دنیای NFT قهرمانان افسانه‌ای
 </p>
+
 
 </div>
 
@@ -131,7 +202,7 @@ PersiaNexus Legends
 
 
 
-<div class="container">
+<section class="container">
 
 
 <h2>
@@ -139,12 +210,17 @@ PersiaNexus Legends
 </h2>
 
 
-<div class="card" onclick="openHero('${hero.id}')">
+<div id="heroes" class="cards">
 
+<div class="loading">
+در حال بارگذاری...
 </div>
 
 
 </div>
+
+
+</section>
 
 
 
@@ -152,14 +228,9 @@ PersiaNexus Legends
 <script src="js/data-loader.js"></script>
 
 
+
 <script>
 
- function openHero(id){
-
-window.location.href =
-`nft-detail.html?id=${id}`;
-
-}
 
 async function loadNFT(){
 
@@ -168,8 +239,25 @@ const data =
 await PersiaNexusData.load("heroes.json");
 
 
+
 const box =
 document.getElementById("heroes");
+
+
+
+box.innerHTML="";
+
+
+
+if(!data || !data.heroes){
+
+box.innerHTML=
+"اطلاعات قهرمان‌ها پیدا نشد";
+
+return;
+
+}
+
 
 
 
@@ -179,30 +267,39 @@ data.heroes.forEach(hero=>{
 box.innerHTML += `
 
 
-<div class="card">
+<div class="card"
+onclick="openHero('${hero.id}')">
 
 
-<img src="${hero.image}">
+<img src="${hero.thumbnail}">
+
 
 
 <div class="info">
 
 
-<h3>
+<div class="name">
+
 ${hero.name}
-</h3>
+
+</div>
+
 
 
 <p>
+
 ${hero.title}
+
 </p>
 
 
-<p class="badge">
+
+<div class="rarity gold">
 
 ${hero.nft.rarity}
 
-</p>
+</div>
+
 
 
 </div>
@@ -221,7 +318,18 @@ ${hero.nft.rarity}
 
 
 
+
+function openHero(id){
+
+window.location.href =
+`nft-detail.html?id=${id}`;
+
+}
+
+
+
 loadNFT();
+
 
 
 </script>
