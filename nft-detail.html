@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>NFT Detail | PersiaNexus</title>
+
+
+<style>
+
+body{
+
+margin:0;
+background:#050505;
+color:white;
+font-family:tahoma;
+
+}
+
+
+.container{
+
+padding:40px;
+
+}
+
+
+.profile{
+
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+
+}
+
+
+.profile img{
+
+width:100%;
+border-radius:25px;
+
+}
+
+
+.card{
+
+background:#151515;
+padding:25px;
+border-radius:20px;
+
+}
+
+
+.gold{
+
+color:#ffd700;
+
+}
+
+
+.power{
+
+background:#222;
+padding:10px;
+border-radius:10px;
+margin:8px 0;
+
+}
+
+
+@media(max-width:800px){
+
+.profile{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+
+</style>
+
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+
+<div id="content">
+
+در حال بارگذاری...
+
+</div>
+
+
+</div>
+
+
+
+<script src="js/data-loader.js"></script>
+
+
+<script>
+
+
+async function loadHero(){
+
+
+const params =
+new URLSearchParams(window.location.search);
+
+
+
+const id =
+params.get("id");
+
+
+
+const data =
+await PersiaNexusData.load("heroes.json");
+
+
+
+const hero =
+data.heroes.find(
+h=>h.id===id
+);
+
+
+
+if(!hero){
+
+document.getElementById("content").innerHTML=
+"Hero Not Found";
+
+return;
+
+}
+
+
+
+document.getElementById("content").innerHTML=
+
+
+`
+
+<div class="profile">
+
+
+<div>
+
+<img src="${hero.image}">
+
+</div>
+
+
+
+<div class="card">
+
+
+<h1>
+${hero.name}
+</h1>
+
+
+<h3>
+${hero.title}
+</h3>
+
+
+<h2 class="gold">
+NFT ${hero.nft.rarity}
+</h2>
+
+
+
+<h3>
+داستان
+</h3>
+
+<p>
+${hero.story.short}
+</p>
+
+
+
+<h3>
+قدرت‌ها
+</h3>
+
+
+${hero.powers.map(
+p=>`
+
+<div class="power">
+${p}
+</div>
+
+`
+).join("")}
+
+
+
+<h3>
+قیمت
+</h3>
+
+
+<p>
+
+${hero.nft.price.amount}
+${hero.nft.price.currency}
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+`;
+
+
+}
+
+
+
+loadHero();
+
+
+</script>
+
+
+</body>
+
+</html>
