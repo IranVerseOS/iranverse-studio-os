@@ -1,0 +1,120 @@
+{
+  "id": "legend-003",
+
+  "name": "Ibn Sina",
+
+  "persianName": "ابن سینا",
+
+  "title": "The Eternal Sage of Knowledge",
+
+  "rarity": "Mythic",
+
+  "powerLevel": 97,
+
+
+  "origin": {
+
+    "era": "Golden Age of Persia",
+
+    "rebirth":
+    "Ibn Sina returns in PersiaNexus as a guardian who combines ancient wisdom with future intelligence."
+
+  },
+
+
+  "story": {
+
+    "intro":
+    "When the universe faced a crisis of forgotten knowledge, the ancient library of Persia awakened and called back its greatest mind.",
+
+
+    "mission":
+    "Protect humanity by preserving knowledge and creating harmony between science, nature and cosmic energy.",
+
+
+    "enemy":
+    "The Void Machines that try to erase human intelligence and ancient wisdom."
+
+  },
+
+
+  "powers": [
+
+    {
+      "name": "Infinite Knowledge",
+      "description":
+      "Access to ancient and futuristic knowledge from multiple civilizations."
+    },
+
+
+    {
+      "name": "Healing Light",
+      "description":
+      "A mysterious energy that can restore life and repair damage."
+    },
+
+
+    {
+      "name": "Quantum Intelligence",
+      "description":
+      "Combines Persian wisdom with advanced artificial intelligence."
+    },
+
+
+    {
+      "name": "Cosmic Vision",
+      "description":
+      "Can analyze hidden patterns across time and space."
+    }
+
+  ],
+
+
+  "weapons": [
+
+    {
+      "name": "Book of Eternal Wisdom",
+      "type": "Knowledge Artifact"
+    },
+
+
+    {
+      "name": "Nexus Crystal",
+      "type": "Quantum Energy Device"
+    }
+
+  ],
+
+
+  "cinematic": {
+
+    "trailerDuration":
+    "60 seconds",
+
+    "theme":
+    "Mystic Persian music mixed with futuristic technology",
+
+    "scene":
+    "In a futuristic Persian city, an ancient library opens. Ibn Sina appears surrounded by golden energy and activates the Nexus Crystal to fight the darkness."
+
+  },
+
+
+  "assets": {
+
+    "image":
+    "assets/nft/ibn-sina.jpg",
+
+    "trailer":
+    "assets/trailers/ibn-sina.mp4",
+
+    "music":
+    "assets/audio/ibn-sina-theme.mp3"
+
+  },
+
+
+  "status":
+  "Active"
+
+}
