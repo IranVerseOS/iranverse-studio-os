@@ -1,0 +1,93 @@
+{
+  "timeline": [
+
+    {
+      "id": "ERA-001",
+
+      "name": "Ancient Awakening",
+
+      "persianName": "بیداری باستانی",
+
+      "description":
+
+      "The first energies of PersiaNexus awakened and changed the destiny of worlds.",
+
+
+      "characters":[
+
+        "Ancient Guardians"
+
+      ]
+
+    },
+
+
+    {
+      "id": "ERA-002",
+
+      "name": "Rise of Legends",
+
+      "persianName": "ظهور افسانه‌ها",
+
+      "description":
+
+      "Heroes like Rostam and Arash returned to protect the balance.",
+
+
+      "characters":[
+
+        "Rostam",
+
+        "Arash Kamangir",
+
+        "Bahram"
+
+      ]
+
+    },
+
+
+    {
+      "id": "ERA-003",
+
+      "name": "Shadow Era",
+
+      "persianName": "عصر سایه",
+
+      "description":
+
+      "Dark forces appeared and challenged the legendary heroes.",
+
+
+      "characters":[
+
+        "Zahhak"
+
+      ]
+
+    },
+
+
+    {
+      "id": "ERA-004",
+
+      "name": "Future Nexus",
+
+      "persianName": "نکسوس آینده",
+
+      "description":
+
+      "Ancient power merges with advanced technology.",
+
+
+      "characters":[
+
+        "All Future Characters"
+
+      ]
+
+    }
+
+  ]
+
+}
