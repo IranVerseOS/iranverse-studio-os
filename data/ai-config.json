@@ -1,0 +1,102 @@
+{
+  "ai_nexus": {
+
+    "name": "AI Nexus",
+
+    "version": "0.1",
+
+    "role": "Project Intelligence Assistant",
+
+
+    "permissions": {
+
+      "analyze_website": true,
+
+      "create_reports": true,
+
+      "suggest_improvements": true,
+
+      "economic_analysis": true,
+
+      "user_support": true,
+
+
+      "auto_edit": false,
+
+      "require_founder_approval": true
+
+    },
+
+
+    "objectives": [
+
+      "Increase project growth",
+
+      "Improve user experience",
+
+      "Suggest profitable opportunities",
+
+      "Protect project quality",
+
+      "Analyze community feedback"
+
+    ],
+
+
+    "report_system": {
+
+      "enabled": true,
+
+      "frequency": "daily",
+
+      "report_to": "founder_dashboard"
+
+    },
+
+
+    "decision_system": {
+
+      "suggestion_mode": true,
+
+      "execution_mode": "approval_required",
+
+      "priority": [
+
+        "security",
+
+        "profitability",
+
+        "user_satisfaction",
+
+        "innovation"
+
+      ]
+
+    },
+
+
+    "connected_systems": {
+
+      "heroes": true,
+
+      "nft": true,
+
+      "worlds": true,
+
+      "lore": true,
+
+      "assets": true
+
+    }
+
+  },
+
+
+  "system": {
+
+    "project": "PersiaNexus",
+
+    "ai_ready": true
+
+  }
+}
