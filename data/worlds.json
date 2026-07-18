@@ -1,1 +1,91 @@
+{
+  "worlds": [
+    {
+      "id": "IV-W-0001",
+      "name": "Ancient Persia",
+      "title": "The Land of Ancient Legends",
 
+      "description": "A mythical Persian world where legendary heroes, ancient knowledge, and forgotten energies exist.",
+
+      "image": "assets/images/worlds/ancient-persia.jpg",
+
+      "era": "Ancient Civilization",
+
+      "energy_system": {
+        "type": "Ancient Energy",
+        "elements": [
+          "Light",
+          "Fire",
+          "Water",
+          "Earth",
+          "Wind",
+          "Spirit"
+        ]
+      },
+
+      "story": {
+        "chapter": "The Birth of Legends",
+        "connected_to": [
+          "Rostam",
+          "Bahram"
+        ]
+      },
+
+      "nft_connection": {
+        "enabled": true,
+        "collection": "PersiaNexus Legends"
+      },
+
+      "status": "active"
+    },
+
+
+    {
+      "id": "IV-W-0002",
+      "name": "Future Nexus",
+
+      "title": "The Cyber Persian Future",
+
+      "description": "A futuristic Persian universe where AI, technology, and ancient wisdom merge together.",
+
+      "image": "assets/images/worlds/future-nexus.jpg",
+
+      "era": "Future Civilization",
+
+      "energy_system": {
+        "type": "Technology Energy",
+        "elements": [
+          "AI",
+          "Cyber Energy",
+          "Space",
+          "Time",
+          "Quantum Force"
+        ]
+      },
+
+      "story": {
+        "chapter": "The Rise of Nexus",
+        "connected_to": [
+          "AI Nexus",
+          "Future Heroes"
+        ]
+      },
+
+      "nft_connection": {
+        "enabled": true,
+        "collection": "Future Nexus Collection"
+      },
+
+      "status": "development"
+    }
+  ],
+
+
+  "system": {
+    "project": "PersiaNexus",
+    "version": "1.0",
+    "world_engine": true,
+    "nft_link": true,
+    "lore_link": true
+  }
+}
