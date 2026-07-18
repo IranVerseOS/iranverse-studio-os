@@ -1,141 +1,6 @@
 {
   "heroes": [
-    {
-      "id": "IV-H-0001",
-      "name": "Rostam",
-      "title": "Legendary Persian Warrior",
 
-      "collection": "PersiaNexus Legends",
-
-      "thumbnail": "assets/images/heroes/rostam.jpg",
-      "image": "assets/images/heroes/rostam-full.jpg",
-
-      "trailer": "assets/videos/rostam-trailer.mp4",
-
-      "world": "Ancient Persia",
-
-      "story": {
-        "short": "A legendary warrior reborn in the PersiaNexus universe.",
-        "full": "Rostam is one of the first legends connected to ancient Persian energy and forgotten powers.",
-        "chapter": "The First Legend"
-      },
-
-      "powers": [
-        "Ancient Strength",
-        "Warrior Spirit",
-        "Persian Hero Energy"
-      ],
-
-      "nft": {
-        "enabled": true,
-        "token_id": "NFT-0001",
-
-        "rarity": "Legendary",
-
-        "price": {
-          "amount": 0,
-          "currency": "ETH"
-        },
-
-        "market_status": "not_listed"
-      },
-
-      "attributes": [
-        {
-          "name": "Origin",
-          "value": "Ancient Persia"
-        },
-        {
-          "name": "Class",
-          "value": "Warrior"
-        }
-      ],
-
-      "related_characters": [
-        "Bahram"
-      ],
-
-      "status": "active"
-    },
-
-
-    {
-      "id": "IV-H-0002",
-      "name": "Bahram",
-
-      "title": "Guardian of Persian Honor",
-
-      "collection": "PersiaNexus Legends",
-
-      "thumbnail": "assets/images/heroes/bahram.jpg",
-      "image": "assets/images/heroes/bahram-full.jpg",
-
-      "trailer": "assets/videos/bahram-trailer.mp4",
-
-      "world": "Ancient Persia",
-
-      "story": {
-        "short": "A guardian connected to ancient Persian forces.",
-        "full": "Bahram protects the balance between ancient knowledge and future generations.",
-        "chapter": "The Guardian Path"
-      },
-
-      "powers": [
-        "Battle Intelligence",
-        "Ancient Knowledge",
-        "Guardian Energy"
-      ],
-
-      "nft": {
-        "enabled": true,
-        "token_id": "NFT-0002",
-
-        "rarity": "Epic",
-
-        "price": {
-          "amount": 0,
-          "currency": "ETH"
-        },
-
-        "market_status": "not_listed"
-      },
-
-      "attributes": [
-        {
-          "name": "Origin",
-          "value": "Ancient Persia"
-        },
-        {
-          "name": "Class",
-          "value": "Guardian"
-        }
-      ],
-
-      "related_characters": [
-        "Rostam"
-      ],
-
-      "status": "active"
-    }
-  ],
-
-
-  "system": {
-
-    "project": "PersiaNexus",
-
-    "version": "1.1",
-
-    "dynamic_character_system": true,
-
-    "nft_ready": true,
-
-    "ai_ready": true
-
-  }
-}
-{
-  "heroes": [
     {
       "id": "IV-H-0001",
       "name": "Arvand",
@@ -144,6 +9,8 @@
       "world": "Ancient Persia",
 
       "level": "Legendary",
+
+      "rarity": "Legendary",
 
       "category": [
         "Energy",
@@ -158,15 +25,129 @@
       ],
 
       "story": {
-        "origin": "Born from the forgotten energy of ancient Persia.",
-        "mission": "Protect the balance between past and future."
+        "origin": "A guardian awakened from the forgotten energies of ancient Persia.",
+        "mission": "Protect the balance between ancient wisdom and future worlds."
       },
 
       "nft": {
-        "rarity": "Legendary",
         "collection": "PersiaNexus Heroes",
+        "token": "NFT-0001",
         "image": "assets/images/heroes/arvand.jpg"
       }
+    },
+
+
+    {
+      "id": "IV-H-0002",
+      "name": "Anahita",
+
+      "title": "Spirit of Sacred Waters",
+
+      "world": "Ancient Persia",
+
+      "level": "Mythic",
+
+      "rarity": "Mythic",
+
+      "category": [
+        "Water",
+        "Nature",
+        "Divine"
+      ],
+
+      "powers": [
+        "Water Manipulation",
+        "Healing Energy",
+        "Nature Harmony"
+      ],
+
+      "story": {
+        "origin": "A mythical protector connected to the ancient forces of nature.",
+        "mission": "Restore harmony between humans and the natural world."
+      },
+
+      "nft": {
+        "collection": "PersiaNexus Heroes",
+        "token": "NFT-0002",
+        "image": "assets/images/heroes/anahita.jpg"
+      }
+    },
+
+
+    {
+      "id": "IV-H-0003",
+
+      "name": "Zarvan",
+
+      "title": "Master of Time",
+
+      "world": "Future Nexus",
+
+      "level": "Divine",
+
+      "rarity": "Divine",
+
+      "category": [
+        "Time",
+        "Space",
+        "Cosmic"
+      ],
+
+      "powers": [
+        "Time Control",
+        "Future Vision",
+        "Temporal Travel"
+      ],
+
+      "story": {
+        "origin": "A futuristic guardian who discovered the secrets of time.",
+        "mission": "Prevent the collapse of timelines."
+      },
+
+      "nft": {
+        "collection": "PersiaNexus Future Legends",
+        "token": "NFT-0003",
+        "image": "assets/images/heroes/zarvan.jpg"
+      }
+    },
+
+
+    {
+      "id": "IV-H-0004",
+
+      "name": "Rostam Nexus",
+
+      "title": "Cyber Warrior of Persia",
+
+      "world": "Future Nexus",
+
+      "level": "Elite",
+
+      "rarity": "Legendary",
+
+      "category": [
+        "Technology",
+        "Fire",
+        "Warrior"
+      ],
+
+      "powers": [
+        "Cyber Armor",
+        "Advanced Combat",
+        "Energy Weapon"
+      ],
+
+      "story": {
+        "origin": "A future version of the legendary Persian warrior.",
+        "mission": "Defend Future Nexus from unknown threats."
+      },
+
+      "nft": {
+        "collection": "PersiaNexus Future Legends",
+        "token": "NFT-0004",
+        "image": "assets/images/heroes/rostam-nexus.jpg"
+      }
     }
+
   ]
 }
