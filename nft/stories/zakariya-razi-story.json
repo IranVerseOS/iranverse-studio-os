@@ -1,0 +1,42 @@
+{
+"id":"legend-004",
+"name":"Zakariya Razi",
+"persianName":"زکریای رازی",
+"title":"The Alchemist of Light",
+"rarity":"Mythic",
+"powerLevel":96,
+
+"origin":{
+"era":"Golden Age of Persia",
+"rebirth":"Zakariya Razi returns as a guardian of science, healing and elemental knowledge."
+},
+
+"story":{
+"intro":"The greatest healer and alchemist of Persia awakens when darkness spreads a mysterious disease across worlds.",
+"mission":"Protect life by combining ancient medicine with future technology.",
+"enemy":"The Dark Plague created by shadow forces."
+},
+
+"powers":[
+{
+"name":"Elemental Alchemy",
+"description":"Controls the hidden energy inside natural elements."
+},
+{
+"name":"Healing Energy",
+"description":"Creates powerful healing waves."
+},
+{
+"name":"Scientific Vision",
+"description":"Understands the secrets of matter and energy."
+}
+],
+
+"assets":{
+"image":"assets/nft/zakariya-razi.jpg",
+"trailer":"assets/trailers/zakariya-razi.mp4",
+"music":"assets/audio/razi-theme.mp3"
+},
+
+"status":"Active"
+}
