@@ -1,0 +1,38 @@
+{
+  "project": "PersiaNexus",
+
+  "assets": {
+
+    "images": {
+      "heroes": "images/heroes/",
+      "nft": "images/nft/",
+      "worlds": "images/worlds/",
+      "backgrounds": "images/backgrounds/"
+    },
+
+    "videos": {
+      "trailers": "videos/"
+    },
+
+    "audio": {
+      "music": "audio/"
+    },
+
+    "logos": {
+      "main": "logos/"
+    },
+
+    "icons": {
+      "ui": "icons/"
+    },
+
+    "fonts": {
+      "custom": "fonts/"
+    }
+
+  },
+
+  "version": "2.0",
+
+  "status": "active"
+}
