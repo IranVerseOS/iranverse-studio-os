@@ -1,1 +1,71 @@
+{
+  "heroes": [
+    {
+      "id": "IV-H-0001",
+      "name": "Rostam",
+      "title": "Legendary Persian Warrior",
+      "collection": "PersiaNexus Legends",
+      "nft": {
+        "enabled": true,
+        "token_id": "NFT-0001",
+        "rarity": "Legendary",
+        "price": {
+          "currency": "ETH",
+          "amount": 0
+        },
+        "market_status": "not_listed"
+      },
+      "story": {
+        "short": "A legendary warrior reborn in the PersiaNexus universe.",
+        "chapter": "The First Legend"
+      },
+      "powers": [
+        "Ancient Strength",
+        "Warrior Spirit",
+        "Persian Hero Energy"
+      ],
+      "world": "Ancient Persia",
+      "image": "assets/images/heroes/rostam.jpg",
+      "trailer": "assets/videos/rostam-trailer.mp4",
+      "status": "active"
+    },
 
+    {
+      "id": "IV-H-0002",
+      "name": "Bahram",
+      "title": "Guardian of Persian Honor",
+      "collection": "PersiaNexus Legends",
+      "nft": {
+        "enabled": true,
+        "token_id": "NFT-0002",
+        "rarity": "Epic",
+        "price": {
+          "currency": "ETH",
+          "amount": 0
+        },
+        "market_status": "not_listed"
+      },
+      "story": {
+        "short": "A protector connected to ancient Persian forces.",
+        "chapter": "The Guardian Path"
+      },
+      "powers": [
+        "Battle Intelligence",
+        "Ancient Knowledge",
+        "Guardian Energy"
+      ],
+      "world": "Ancient Persia",
+      "image": "assets/images/heroes/bahram.jpg",
+      "trailer": "assets/videos/bahram-trailer.mp4",
+      "status": "active"
+    }
+  ],
+
+  "system": {
+    "project": "PersiaNexus",
+    "version": "1.0",
+    "nft_ready": true,
+    "marketplace_ready": false,
+    "ai_connection": true
+  }
+}
