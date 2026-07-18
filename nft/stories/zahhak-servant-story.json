@@ -1,0 +1,42 @@
+{
+"id":"villain-002",
+"name":"Shadow Servant",
+"persianName":"یار ضحاک",
+"title":"The Dark Messenger",
+"rarity":"Rare",
+"powerLevel":82,
+
+"origin":{
+"era":"Shadow Era",
+"rebirth":"A loyal servant created from corrupted energy."
+},
+
+"story":{
+"intro":"A mysterious warrior who spreads the commands of Zahhak across the worlds.",
+"mission":"Spread darkness and weaken the guardians.",
+"enemy":"All heroes of PersiaNexus."
+},
+
+"powers":[
+{
+"name":"Shadow Movement",
+"description":"Moves through darkness instantly."
+},
+{
+"name":"Dark Illusion",
+"description":"Creates false realities."
+},
+{
+"name":"Corruption Energy",
+"description":"Weakens enemy powers."
+}
+],
+
+"assets":{
+"image":"assets/nft/zahhak-servant.jpg",
+"trailer":"assets/trailers/zahhak-servant.mp4",
+"music":"assets/audio/shadow-servant-theme.mp3"
+},
+
+"status":"Enemy"
+}
