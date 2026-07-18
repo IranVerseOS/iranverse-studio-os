@@ -1,0 +1,77 @@
+{
+  "lore": [
+
+    {
+      "id": "IV-L-0001",
+
+      "title": "The Birth of Legends",
+
+      "world": "Ancient Persia",
+
+      "chapter": 1,
+
+      "summary": "The beginning of legendary warriors who carry ancient Persian energies.",
+
+      "characters": [
+        "Rostam",
+        "Bahram"
+      ],
+
+      "events": [
+        "Awakening of Ancient Energy",
+        "Formation of Persian Legends"
+      ],
+
+      "media": {
+        "trailer": "assets/videos/birth-of-legends.mp4",
+        "poster": "assets/images/backgrounds/birth-of-legends.jpg"
+      },
+
+      "nft_connection": true,
+
+      "status": "active"
+    },
+
+
+    {
+      "id": "IV-L-0002",
+
+      "title": "The Rise of Nexus",
+
+      "world": "Future Nexus",
+
+      "chapter": 2,
+
+      "summary": "Ancient knowledge merges with artificial intelligence and future technology.",
+
+      "characters": [
+        "AI Nexus",
+        "Future Heroes"
+      ],
+
+      "events": [
+        "Creation of AI Nexus",
+        "Connection Between Past and Future"
+      ],
+
+      "media": {
+        "trailer": "assets/videos/rise-of-nexus.mp4",
+        "poster": "assets/images/backgrounds/rise-of-nexus.jpg"
+      },
+
+      "nft_connection": true,
+
+      "status": "development"
+    }
+
+  ],
+
+
+  "system": {
+    "project": "PersiaNexus",
+    "version": "1.0",
+    "story_engine": true,
+    "animation_ready": true,
+    "ai_connection": true
+  }
+}
