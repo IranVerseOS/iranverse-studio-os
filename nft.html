@@ -139,7 +139,7 @@ PersiaNexus Legends
 </h2>
 
 
-<div id="heroes" class="cards">
+<div class="card" onclick="openHero('${hero.id}')">
 
 </div>
 
@@ -154,6 +154,12 @@ PersiaNexus Legends
 
 <script>
 
+ function openHero(id){
+
+window.location.href =
+`nft-detail.html?id=${id}`;
+
+}
 
 async function loadNFT(){
 
