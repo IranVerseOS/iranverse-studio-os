@@ -1,0 +1,102 @@
+{
+  "universe": "PersiaNexus",
+
+  "lore_version": "1.0",
+
+
+  "main_story": {
+
+    "title": "The Awakening of PersiaNexus",
+
+    "summary":
+    "Ancient Persian energies awaken in a future era, bringing legendary heroes and forgotten powers back to Earth."
+
+  },
+
+
+  "worlds": [
+
+    {
+
+      "name": "Ancient Persia",
+
+      "type": "Mystical Civilization",
+
+      "description":
+      "A world of ancient knowledge, warriors, myths and hidden energies."
+
+    },
+
+
+    {
+
+      "name": "Future Nexus",
+
+      "type": "Cyber Persian Future",
+
+      "description":
+      "A futuristic civilization where AI and ancient wisdom merge."
+
+    }
+
+  ],
+
+
+  "characters": [
+
+    {
+
+      "name": "Rostam",
+
+      "role": "Eternal Guardian",
+
+      "alignment": "Light",
+
+      "power":
+      "Ancient Warrior Energy"
+
+    },
+
+
+    {
+
+      "name": "Arash Kamangir",
+
+      "role": "Guardian of Light",
+
+      "alignment": "Light",
+
+      "power":
+      "Cosmic Arrow Energy"
+
+    },
+
+
+    {
+
+      "name": "Zahhak",
+
+      "role": "Shadow King",
+
+      "alignment": "Darkness",
+
+      "power":
+      "Dark Ancient Force"
+
+    }
+
+
+  ],
+
+
+  "rules": [
+
+    "Ancient energy can awaken forgotten heroes",
+
+    "Technology and mythology can coexist",
+
+    "AI protects balance but does not control destiny"
+
+  ]
+
+}
