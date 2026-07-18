@@ -4,53 +4,83 @@
 
 
 <a href="index.html" class="logo">
-
 ⚜ PersiaNexus
-
 </a>
 
 
-<nav>
+
+<button class="menu-toggle" onclick="toggleMenu()">
+
+☰
+
+</button>
+
+
+
+<nav id="pn-menu">
 
 
 <a href="index.html">
-Home
+🏠 Home
 </a>
 
 
 <a href="nft.html">
-NFT Universe
+💎 NFT Universe
 </a>
 
 
 <a href="worlds.html">
-Worlds
+🌍 Worlds
 </a>
 
 
 <a href="story.html">
-Stories
+📖 Stories
 </a>
 
 
 <a href="animation.html">
-Animation
+🎬 Animation
 </a>
 
 
 <a href="music.html">
-Music
+🎵 Music
 </a>
 
 
 <a href="ai.html">
-AI Nexus
+🤖 AI Nexus
+</a>
+
+
+<a href="dashboard.html">
+👑 Founder
 </a>
 
 
 </nav>
 
 
+
 </div>
 
 </header>
+
+
+
+<script>
+
+function toggleMenu(){
+
+const menu =
+document.getElementById("pn-menu");
+
+
+menu.classList.toggle("active");
+
+
+}
+
+</script>
