@@ -1,0 +1,11 @@
+{
+  "id": "NFT-0001",
+  "name": "Arvand Guardian NFT",
+  "hero": "Arvand",
+  "rarity": "Legendary",
+  "level": "Awakened",
+  "powerBoost": 500,
+  "world": "Ancient Persia",
+  "status": "Active",
+  "description": "A legendary NFT connected to the first Persian guardian."
+}
