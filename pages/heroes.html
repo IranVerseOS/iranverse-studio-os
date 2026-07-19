@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>PersiaNexus | Heroes</title>
+
+<link rel="stylesheet" href="../css/style.css">
+
+<link rel="stylesheet" href="../css/heroes.css">
+
+</head>
+
+<body>
+
+<header class="hero-header">
+
+    <div class="logo">
+        <h1>⚔️ PersiaNexus</h1>
+        <span>Heroes Universe</span>
+    </div>
+
+
+    <nav>
+
+        <a href="../index.html">
+            Home
+        </a>
+
+        <a href="heroes.html" class="active">
+            Heroes
+        </a>
+
+        <a href="worlds.html">
+            Worlds
+        </a>
+
+        <a href="nft.html">
+            NFT
+        </a>
+
+        <a href="ai.html">
+            AI Nexus
+        </a>
+
+    </nav>
+
+
+</header>
+
+
+
+<main>
+
+
+<section class="heroes-intro">
+
+
+<h2>
+Persian Legends Awakening
+</h2>
+
+
+<p>
+Explore legendary warriors, mythical guardians,
+ancient powers and future heroes of PersiaNexus universe.
+</p>
+
+
+</section>
+
+
+
+<section class="hero-tools">
+
+
+<input 
+type="text"
+id="hero-search"
+placeholder="Search Hero..."
+>
+
+
+
+<select id="hero-filter">
+
+<option value="all">
+All Classes
+</option>
+
+
+<option value="Legendary">
+Legendary
+</option>
+
+
+<option value="Mythic">
+Mythic
+</option>
+
+
+<option value="Divine">
+Divine
+</option>
+
+
+</select>
+
+
+</section>
+
+
+
+<section 
+id="heroes-container"
+class="heroes-grid">
+
+
+<div class="loading">
+
+Loading Heroes...
+
+</div>
+
+
+</section>
+
+
+
+</main>
+
+
+
+<footer>
+
+<p>
+© 2026 PersiaNexus Universe
+</p>
+
+</footer>
+
+
+
+<script src="../js/hero-engine.js"></script>
+
+
+</body>
+</html>
+<style>
+
+.heroes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    gap: 30px;
+    padding: 40px;
+}
+
+
+.hero-card {
+
+    background:
+    linear-gradient(
+        145deg,
+        rgba(255,255,255,0.12),
+        rgba(0,0,0,0.7)
+    );
+
+    border-radius:25px;
+
+    padding:25px;
+
+    color:white;
+
+    border:
+    1px solid rgba(255,215,0,0.3);
+
+    box-shadow:
+    0 0 25px rgba(255,215,0,0.15);
+
+    transition:
+    0.4s;
+
+}
+
+
+.hero-card:hover {
+
+    transform:
+    translateY(-10px)
+    scale(1.03);
+
+    box-shadow:
+    0 0 40px rgba(255,215,0,0.45);
+
+}
+
+
+
+.hero-card img {
+
+    width:100%;
+
+    height:320px;
+
+    object-fit:cover;
+
+    border-radius:20px;
+
+}
+
+
+
+.hero-card h2 {
+
+    color:#ffd700;
+
+    font-size:28px;
+
+}
+
+
+
+.hero-card h4 {
+
+    color:#8fd3ff;
+
+}
+
+
+
+.hero-info {
+
+    margin-top:20px;
+
+    padding:15px;
+
+    background:
+    rgba(0,0,0,0.35);
+
+    border-radius:15px;
+
+}
+
+
+
+.hero-info p {
+
+    margin:8px 0;
+
+}
+
+
+
+.hero-header {
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:25px 50px;
+
+    background:
+    rgba(0,0,0,0.8);
+
+}
+
+
+
+.hero-header nav a {
+
+    color:white;
+
+    margin:0 15px;
+
+    text-decoration:none;
+
+}
+
+
+
+.hero-header nav a.active {
+
+    color:#ffd700;
+
+}
+
+
+
+.heroes-intro {
+
+    text-align:center;
+
+    padding:60px 20px;
+
+}
+
+
+
+.heroes-intro h2 {
+
+    font-size:45px;
+
+    color:#ffd700;
+
+}
+
+
+
+.hero-tools {
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    padding:20px;
+
+}
+
+
+
+.hero-tools input,
+.hero-tools select {
+
+    padding:15px;
+
+    border-radius:10px;
+
+    border:none;
+
+}
+
+
+
+.loading {
+
+    text-align:center;
+
+    color:#ffd700;
+
+    font-size:30px;
+
+}
+
+
+</style>
+
+<script>
+
+const searchInput =
+document.getElementById("hero-search");
+
+
+const filter =
+document.getElementById("hero-filter");
+
+
+
+let allHeroes = [];
+
+
+
+async function loadHeroData(){
+
+
+try{
+
+
+const response =
+await fetch("../data/heroes/index.json");
+
+
+const data =
+await response.json();
+
+
+
+for(const file of data.heroes){
+
+
+const heroResponse =
+await fetch("../data/heroes/" + file);
+
+
+const hero =
+await heroResponse.json();
+
+
+allHeroes.push(hero);
+
+
+}
+
+
+
+displayHeroes(allHeroes);
+
+
+
+}
+
+catch(error){
+
+console.log(error);
+
+
+document.getElementById("heroes-container").innerHTML =
+
+`
+<h2>
+Hero Database Error
+</h2>
+`;
+
+}
+
+
+}
+
+
+
+
+function displayHeroes(heroes){
+
+
+const container =
+document.getElementById("heroes-container");
+
+
+container.innerHTML = "";
+
+
+
+heroes.forEach(hero => {
+
+
+container.innerHTML +=
+
+`
+
+<div class="hero-card">
+
+
+<img 
+src="../${hero.image}"
+alt="${hero.name}"
+>
+
+
+
+<h2>
+${hero.name}
+</h2>
+
+
+
+<h4>
+${hero.title}
+</h4>
+
+
+
+<p>
+${hero.description}
+</p>
+
+
+
+<div class="hero-info">
+
+
+<p>
+⚔️ Class:
+${hero.class}
+</p>
+
+
+<p>
+🔥 Element:
+${hero.element}
+</p>
+
+
+<p>
+💎 NFT:
+${hero.nft}
+</p>
+
+
+<p>
+🌍 World:
+${hero.world}
+</p>
+
+
+<p>
+⚡ Power:
+${hero.power}
+</p>
+
+
+
+</div>
+
+
+</div>
+
+
+`;
+
+
+
+});
+
+
+}
+
+
+
+
+searchInput.addEventListener(
+"input",
+()=>{
+
+
+const text =
+searchInput.value.toLowerCase();
+
+
+const result =
+allHeroes.filter(hero =>
+
+
+hero.name
+.toLowerCase()
+.includes(text)
+
+
+
+);
+
+
+
+displayHeroes(result);
+
+
+}
+
+);
+
+
+
+
+
+filter.addEventListener(
+"change",
+()=>{
+
+
+if(filter.value==="all"){
+
+
+displayHeroes(allHeroes);
+
+
+return;
+
+}
+
+
+
+const result =
+allHeroes.filter(hero =>
+
+hero.class === filter.value
+
+);
+
+
+
+displayHeroes(result);
+
+
+
+}
+
+);
+
+
+
+
+
+loadHeroData();
+
+
+</script>
