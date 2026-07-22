@@ -1,0 +1,288 @@
+/* =====================================================
+   PersiaNexus Theme v1.0
+   File : layout.css
+===================================================== */
+
+/* ===========================
+   Reset
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* ===========================
+   HTML
+=========================== */
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+/* ===========================
+   BODY
+=========================== */
+
+body{
+
+    background:var(--bg);
+
+    color:var(--text);
+
+    font-family:
+    "Vazirmatn",
+    sans-serif;
+
+    overflow-x:hidden;
+
+    min-height:100vh;
+
+    line-height:1.7;
+
+}
+
+/* ===========================
+   Selection
+=========================== */
+
+::selection{
+
+    background:var(--gold);
+
+    color:#000;
+
+}
+
+/* ===========================
+   Scrollbar
+=========================== */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#111;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:var(--gold);
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:var(--gold-light);
+
+}
+
+/* ===========================
+   Images
+=========================== */
+
+img{
+
+    display:block;
+
+    max-width:100%;
+
+}
+
+/* ===========================
+   Links
+=========================== */
+
+a{
+
+    text-decoration:none;
+
+    color:inherit;
+
+}
+
+/* ===========================
+   Lists
+=========================== */
+
+ul{
+
+    list-style:none;
+
+}
+
+/* ===========================
+   Container
+=========================== */
+
+.container{
+
+    width:92%;
+
+    max-width:1400px;
+
+    margin:auto;
+
+}
+
+/* ===========================
+   Section
+=========================== */
+
+section{
+
+    padding:100px 0;
+
+    position:relative;
+
+}
+
+/* ===========================
+   Titles
+=========================== */
+
+h1{
+
+    font-size:64px;
+
+    font-weight:800;
+
+}
+
+h2{
+
+    font-size:48px;
+
+    font-weight:700;
+
+}
+
+h3{
+
+    font-size:34px;
+
+    font-weight:700;
+
+}
+
+h4{
+
+    font-size:26px;
+
+}
+
+p{
+
+    font-size:18px;
+
+    color:var(--text-light);
+
+}
+
+/* ===========================
+   Grid
+=========================== */
+
+.grid{
+
+    display:grid;
+
+    gap:30px;
+
+}
+
+/* ===========================
+   Flex
+=========================== */
+
+.flex{
+
+    display:flex;
+
+}
+
+.center{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media(max-width:992px){
+
+h1{
+
+font-size:46px;
+
+}
+
+h2{
+
+font-size:36px;
+
+}
+
+h3{
+
+font-size:28px;
+
+}
+
+section{
+
+padding:70px 0;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.container{
+
+width:95%;
+
+}
+
+h1{
+
+font-size:36px;
+
+}
+
+h2{
+
+font-size:30px;
+
+}
+
+h3{
+
+font-size:24px;
+
+}
+
+p{
+
+font-size:16px;
+
+}
+
+}
